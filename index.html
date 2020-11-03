@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kata_story</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/kta.jpg">
     <!--css-->
     <link rel="stylesheet" href="style.css">
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--leaflet css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!--leaflet end -->
 
 </head>
 <body>
@@ -17,10 +27,10 @@
             <div id='navbar'>
                 <ul id="nav">
                     <li class="nav_item"><a href="#">Accueil</li></a>
-                    <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</li></a>
-                    <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</li></a>
-                    <li class="nav_item margin_left_10px"><a href="blog.html">Blog</li></a>
-                    <li class="nav_item margin_left_10px"><a href="contact.html">Contact</li></a>
+                    <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
+                    <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
+                    <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
+                    <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -55,7 +65,10 @@
             <h3 class="banner_yes">Vas quand meme jeter un coup d'oeil ici Mr Duval. Tu risquerais d'apprendre quelque choses. </h3>
             <button onclick="window.location.href = 'blog.html';" >ici</button>
         </div>
-
+        <div id="mapid"></div>
+        <footer>
+            <h3>Tous droits résérvés</h3>
+        </footer>
     <!--jquery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--jquery end-->

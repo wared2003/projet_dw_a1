@@ -48,6 +48,7 @@ ul{
     text-align: center;
     color: white;
 }
+
 #home_banner h1{
     margin-top: 0px;
 }
@@ -118,4 +119,23 @@ ul{
  }
  .banner_yes button:hover{
     font-size: 60px;
+}
+#mapid { 
+    height: 70vh;
+    width: 80%;
+    margin:0 auto;
+    margin-top: 300px;
+    margin-bottom: 130px;
+    border-radius: 30px;
+}
+body{
+    background-color: #000000;
+}
+footer{
+    float: bottom;
+    color: white;
+    text-align: center;
+}
+footer h3{
+    margin-bottom: 30px;
 }
