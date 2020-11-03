@@ -17,17 +17,17 @@
             <div id='navbar'>
                 <ul id="nav">
                     <li class="nav_item"><a href="#">Accueil</li></a>
-                    <li class="nav_item margin_left_10px"><a href="#">Histoire</li></a>
-                    <li class="nav_item margin_left_10px"><a href="#">Galerie</li></a>
-                    <li class="nav_item margin_left_10px"><a href="#">Blog</li></a>
-                    <li class="nav_item margin_left_10px"><a href="#">Contact</li></a>
+                    <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</li></a>
+                    <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</li></a>
+                    <li class="nav_item margin_left_10px"><a href="blog.html">Blog</li></a>
+                    <li class="nav_item margin_left_10px"><a href="contact.html">Contact</li></a>
                 </ul>
             </div>
         </nav>
         <!--navbar end-->
 
         <!--banner-->
-        <div id="banner">
+        <div id="home_banner">
             <h1>Bienvenue Sous Terre</h1>
             <br><br><br><br><br>
             <h3>
@@ -37,11 +37,30 @@
                 Enfin un autre paris où des hobbit se ballade.<br> Frontale sur la tête et Bière à la main pour certains(ok pour la majorité)
             </p>
             <div id="banner_sondage">
-                <button>OUI</button>
-                <button>NON</button>
+                <button id="sondage_yes">OUI</button>
+                <button id="sondage_no">NON</button>
             </div>
         </div>
-        <!--banner end-->
-    </div>
+
+        <div class="reponse_banner banner_yes">
+            <h1 class="banner_yes">Tu es sur que tu sais tout ?</h1>
+        </div>
+        <div class="reponse_banner banner_no">
+            <h1 class="banner_no">Comment ça NON ? !</h1>
+            <h3 class="banner_no">Bon c'est pas grave commence par jeter un coup d'oeuil ici : </h3>
+            <button onclick="window.location.href = 'histoire.html';" >ici</button>
+        </div>
+        <div class="reponse_banner banner_yes">
+            <h1 >Tu es sur que tu sais tout ?</h1>
+            <h3 class="banner_yes">Vas quand meme jeter un coup d'oeil ici Mr Duval, tu risquerais d'apprendre quelque choses </h3>
+            <button onclick="window.location.href = 'blog.html';" >ici</button>
+        </div>
+
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--jquery end-->
+    <!--javascript -->
+    <script type="text/javascript" src="app.js"></script>
+    <!--javascript end--> 
 </body>
 </html>

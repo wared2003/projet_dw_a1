@@ -41,14 +41,14 @@ ul{
     text-align: center;
     margin: 0px;
 }
-#banner{
+#home_banner{
     display: block;
     position: relative;
     top: 200px;
     text-align: center;
     color: white;
 }
-#banner h1{
+#home_banner h1{
     margin-top: 0px;
 }
 #banner_sondage button{
@@ -65,5 +65,57 @@ ul{
     border-radius: 10px ;
 }
 #banner_sondage button:hover{
+    font-size: 60px;
+}
+.reponse_banner{
+    display: none;
+    display: block;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    color: white;
+}
+.reponse_banner *{
+   display: none;
+   text-align: center;
+}
+.reponse_banner h1{
+    margin: 0px;
+ }
+ .banner_no h3{
+     margin-top: 100px;
+ }
+ .banner_no button{
+    margin-top: 20px;
+    height: 70px;
+    width: 150px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 10px ;
+ }
+ .banner_no button:hover{
+    font-size: 60px;
+}
+.reponse_banner h1{
+    margin: 0px;
+ }
+ .banner_yes h3{
+     margin-top: 100px;
+ }
+ .banner_yes button{
+    margin-top: 20px;
+    height: 70px;
+    width: 150px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    border-radius: 10px ;
+ }
+ .banner_yes button:hover{
     font-size: 60px;
 }
