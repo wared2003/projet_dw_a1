@@ -128,7 +128,7 @@ ul{
     margin-bottom: 130px;
     border-radius: 30px;
 }
-body{
+.bcg_black{
     background-color: #000000;
 }
 footer{
@@ -138,4 +138,51 @@ footer{
 }
 footer h3{
     margin-bottom: 30px;
+}
+.content {
+    background:-webkit-linear-gradient(top, red , blue);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+#contener{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 350px; 
+}
+#contener div{
+    display: block;
+    height: 200px;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+}
+#contener img{
+    height: 100%;
+    width: 100%;
+}
+#contener p{
+    margin-top: 30%;
+}
+
+#contener_bis{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    height: 350px; 
+}
+#contener_bis div{
+    display: block;
+    height: 200px;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+}
+#contener_bis img{
+    height: 100%;
+    width: 100%;
+}
+#contener_bis p{
+    margin-top: 30%;
 }
