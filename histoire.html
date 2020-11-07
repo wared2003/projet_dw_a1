@@ -1,2 +1,140 @@
-<h1 style="text-align: center; margin-top: 100px;">Cette page est encore en construction, reviens plus tard</h1>
-<a href="index.html" style="display: block; text-align: center;">Retour à l'acceuil</a>
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kata_story</title>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/kta.jpg">
+        <!--css-->
+        <link rel="stylesheet" href="style.css">
+        <!--fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <!--leaflet css-->
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+            <!-- Make sure you put this AFTER Leaflet's CSS -->
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <!--leaflet end -->
+
+    </head>
+    <body class="bcg_grey">
+
+        <!--navbar -->
+        <nav id = "navbar">
+            <ul id="nav">
+                <li class="nav_item"><a href="index.html">Accueil</li></a>
+                <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
+                <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
+                <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
+                <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+          <!--responsive navbar -->
+
+        <button id="responsive_nav_button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id = "responsive_nav">
+            <ul id="nav">
+                <li class="nav_item"><a href="index.html">Accueil</li></a>
+                <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
+                <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
+                <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
+                <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--responsive navbar end -->
+        
+        <!--navbar end-->
+
+        <!--banner-->
+        <header id="histoire_header">
+            <h1 class="white">Histoire</h1>
+        </header>
+        <!--banner end-->
+
+        <main id="histoire_main">
+            <div>
+                <section id="histoire_section_0">
+                    <h1>Genèse des carrières</h1>
+                    <div id="histoire_section_0_grid">
+                        <div class="in_grid_img">
+                            <img src="assets/kta.jpg" alt="catacombes">
+                        </div>
+                        <div class="in_grid_txt">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aliquid autem minima eveniet dolorum? Velit veritatis sed modi fugit harum similique dolor dolorem exercitationem deleniti iste! Sint blanditiis ullam ab dignissimos. Eaque suscipit quis quaerat consectetur consequatur obcaecati esse quidem temporibus iste aliquam fugiat, dignissimos in at molestias natus illo exercitationem explicabo reprehenderit ullam dicta earum. Soluta asperiores in aspernatur non eveniet, sit dolorem, voluptatem autem magni quisquam, nostrum sequi recusandae vel? Sit saepe eaque libero et alias voluptatum perspiciatis minima eius quo quidem deleniti modi pariatur porro placeat nostrum perferendis odit, quis veritatis aut dolore quas ad reprehenderit? Ullam?</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="histoire_section_1">
+                    <h1>Naissance de l'IGC</h1>
+                    <div id="histoire_section_1_grid">
+                        <div class="in_grid_txt">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aliquid autem minima eveniet dolorum? Velit veritatis sed modi fugit harum similique dolor dolorem exercitationem deleniti iste! Sint blanditiis ullam ab dignissimos. Eaque suscipit quis quaerat consectetur consequatur obcaecati esse quidem temporibus iste aliquam fugiat, dignissimos in at molestias natus illo exercitationem explicabo reprehenderit ullam dicta earum. Soluta asperiores in aspernatur non eveniet, sit dolorem, voluptatem autem magni quisquam, nostrum sequi recusandae vel? Sit saepe eaque libero et alias voluptatum perspiciatis minima eius quo quidem deleniti modi pariatur porro placeat nostrum perferendis odit, quis veritatis aut dolore quas ad reprehenderit? Ullam?</p>
+                        </div>
+                        <div class="in_grid_img">
+                            <img src="assets/kta.jpg" alt="catacombes">
+                        </div>
+                        <div class="in_grid_img">
+                            <img src="assets/kta.jpg" alt="catacombes">
+                        </div>
+                        <div class="in_grid_txt">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aliquid autem minima eveniet dolorum? Velit veritatis sed modi fugit harum similique dolor dolorem exercitationem deleniti iste! Sint blanditiis ullam ab dignissimos. Eaque suscipit quis quaerat consectetur consequatur obcaecati esse quidem temporibus iste aliquam fugiat, dignissimos in at molestias natus illo exercitationem explicabo reprehenderit ullam dicta earum. Soluta asperiores in aspernatur non eveniet, sit dolorem, voluptatem autem magni quisquam, nostrum sequi recusandae vel? Sit saepe eaque libero et alias voluptatum perspiciatis minima eius quo quidem deleniti modi pariatur porro placeat nostrum perferendis odit, quis veritatis aut dolore quas ad reprehenderit? Ullam?</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="histoire_section_2">
+                    <h1>De carrières à catacombes</h1>
+                    <div id="histoire_section_2_grid">
+                        <div class="in_grid_img">
+                            <img src="assets/kta.jpg" alt="catacombes">
+                        </div>
+                        <div class="in_grid_txt">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aliquid autem minima eveniet dolorum? Velit veritatis sed modi fugit harum similique dolor dolorem exercitationem deleniti iste! Sint blanditiis ullam ab dignissimos. Eaque suscipit quis quaerat consectetur consequatur obcaecati esse quidem temporibus iste aliquam fugiat, dignissimos in at molestias natus illo exercitationem explicabo reprehenderit ullam dicta earum. Soluta asperiores in aspernatur non eveniet, sit dolorem, voluptatem autem magni quisquam, nostrum sequi recusandae vel? Sit saepe eaque libero et alias voluptatum perspiciatis minima eius quo quidem deleniti modi pariatur porro placeat nostrum perferendis odit, quis veritatis aut dolore quas ad reprehenderit? Ullam?</p>
+                        </div>
+                        <div class="in_grid_img">
+                            <img src="assets/kta.jpg" alt="catacombes">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="histoire_section_3">
+                    <h1>Les carrières de nos jours </h1>
+                    <div id="histoire_section_3_grid">
+                        <div class="in_grid_img">
+                            <img src="assets/kta.jpg" alt="catacombes">
+                        </div>
+                        <div class="in_grid_txt">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In aliquid autem minima eveniet dolorum? Velit veritatis sed modi fugit harum similique dolor dolorem exercitationem deleniti iste! Sint blanditiis ullam ab dignissimos. Eaque suscipit quis quaerat consectetur consequatur obcaecati esse quidem temporibus iste aliquam fugiat, dignissimos in at molestias natus illo exercitationem explicabo reprehenderit ullam dicta earum. Soluta asperiores in aspernatur non eveniet, sit dolorem, voluptatem autem magni quisquam, nostrum sequi recusandae vel? Sit saepe eaque libero et alias voluptatum perspiciatis minima eius quo quidem deleniti modi pariatur porro placeat nostrum perferendis odit, quis veritatis aut dolore quas ad reprehenderit? Ullam?</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <nav id="nav_histoire">
+                <ul >
+                    <li class="nav_item margin_left_10px"><a href="#histoire_section_0" class="">Genèse des carrières</a></li>
+                    <li class="nav_item margin_left_10px"><a href="#histoire_section_1" class="">Naissance de l'IGC</a></li>
+                    <li class="nav_item margin_left_10px"><a href="#histoire_section_2">De carrières à catacombes</a></li>
+                    <li class="nav_item margin_left_10px"><a href="#histoire_section_3">Les carrières de nos jours</a></li>
+                </ul>
+            </nav>
+        </main>
+        
+        <footer >
+            <h3>Tous droits résérvés</h3>
+        </footer>
+        <!--jquery-->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--jquery end-->
+        <!--javascript -->
+        <script type="text/javascript" src="histoire_app.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <!--javascript end--> 
+    </body>
+</html>

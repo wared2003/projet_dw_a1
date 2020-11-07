@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,34 +23,50 @@
 <body class="bcg_black">
     <div id="background_img">
         <!--navbar -->
-        <nav>
-            <div id='navbar'>
+        <nav id="navbar">
                 <ul id="nav">
-                    <li class="nav_item"><a href="#">Accueil</li></a>
+                    <li class="nav_item"><a href="index.html">Accueil</li></a>
                     <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
                     <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
                     <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
                     <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
         </nav>
+
+        <!--responsive navbar -->
+
+        <button id="responsive_nav_button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id = "responsive_nav">
+            <ul id="nav">
+                <li class="nav_item"><a href="index.html">Accueil</li></a>
+                <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
+                <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
+                <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
+                <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--responsive navbar end -->
+
         <!--navbar end-->
 
         <!--banner-->
-        <div id="home_banner">
+        <header id="home_header">
             <h1>Bienvenue Sous Terre</h1>
-            <br><br><br><br><br>
             <h3>
-                Savais-tu que sous paris, et bas il y avait encore paris ?
+                Savais-tu que sous Paris, et bas il y avait encore paris ?
             </h3>
             <p>
-                Enfin un autre paris où des hobbit se ballade.<br> Frontale sur la tête et pour certains Bière à la main pour certains(ok pour la majorité)
+                Enfin un autre Paris où des hobbits se ballade.<br> Frontale sur la tête et pour certains bière à la main(ok pour la majorité)
             </p>
             <div id="banner_sondage">
                 <button id="sondage_yes">OUI</button>
                 <button id="sondage_no">NON</button>
             </div>
-        </div>
+        </header>
 
         <div class="reponse_banner banner_yes">
             <h1 class="banner_yes">Tu es sur que tu sais tout ?</h1>
@@ -73,6 +89,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--jquery end-->
     <!--javascript -->
+    <script type="text/javascript" src="index_app.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <!--javascript end--> 
 </body>
