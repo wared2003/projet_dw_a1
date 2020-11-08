@@ -28,5 +28,5 @@ $(document).ready(function(){
 }).addTo(mymap);
 
     //carte index.html end
-
+   
 });

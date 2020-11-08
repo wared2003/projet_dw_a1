@@ -19,10 +19,11 @@ $(document).ready(function(){
             }
         }
         if (old_id !== id){
-            id = old_id
+            id = old_id;
             $('a', $section_navbar).removeClass('grey');
             $('a[href="#' + id + '"]', $section_navbar).addClass('grey');
-        }
+            $('.'+'span_' + id + '').addClass('bcg_grey_2');
+        };
     });
 
 

@@ -31,6 +31,9 @@ a{
 .bcg_grey{
     background-color: lightgray;
 }
+.bcg_grey_2{
+ background-color: grey !important;
+}
 .bcg_lateGrey{
     background-color: lightslategray;
 }
@@ -54,7 +57,6 @@ nav{
     text-align: center;
     list-style-type: none;
     display: inline-block;
-
 }
 .nav_item a{
     color: white;
@@ -83,7 +85,6 @@ ul{
     margin-left: 35px;
     margin-top: 15px;
     z-index: 2;
-
 }
 #responsive_nav_button span{
     display: block;
@@ -194,16 +195,25 @@ ul{
  .banner_yes button:hover{
     font-size: 60px;
 }
+
+/* map*/
+
 #mapid { 
-    height: 70vh;
-    width: 80%;
+
     margin:0 auto;
+    height: 500px;
+    width: 80%;
     margin-top: 300px;
     margin-bottom: 130px;
     border-radius: 30px;
     z-index: 0;
+    position: relative;
 }
+
+
 /*histoire.html*/
+
+
 #histoire_header{
 display: block;
 background-color: lightslategray;
@@ -217,6 +227,9 @@ padding-top: 100px;
 #nav_histoire ul{
     padding-left: 0px !important;
     position: fixed;
+}
+#nav_histoire li{
+    margin: 0px;
 }
 #histoire_header h1{
     text-align: center;
@@ -234,6 +247,15 @@ padding-top: 100px;
 }
 #histoire_main h1{
     text-align: center;
+}
+
+.progress_span{
+    height: 40px;
+    width: 10px;
+    display: block;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*section 0*/
@@ -320,33 +342,28 @@ footer h3{
     #nav_histoire{
         display: none;
     }
-}
+}    
 @media only screen and (max-width: 1200px){
     /*in section*/
     #histoire_section_0_grid{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
     }
     #histoire_section_1_grid{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 4;
     }
     #histoire_section_2_grid{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3;
     }
     #histoire_section_3_grid{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
     }
 }
 @media only screen and (max-width: 1600px){
     #histoire_section_2_grid{
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3;
     }
@@ -356,7 +373,7 @@ footer h3{
        margin-left: auto;
        margin-right: auto;
     }
-    #histoire_section_2_grid txt{
+    #histoire_section_2_grid .in_grid_txt{
         max-width: 700px;
         display: block;
         margin-left: auto;

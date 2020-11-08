@@ -6,7 +6,6 @@ $(document).ready(function(){
         $("#responsive_nav ul").css("display" , "block");
 
     });
-
     //responsive navbar end
 
 });
