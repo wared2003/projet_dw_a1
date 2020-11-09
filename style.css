@@ -299,6 +299,7 @@ padding-top: 100px;
 
 #histoire_section_3{
     background-color: black;
+    margin-bottom: 50px;
 }
 #histoire_section_3_grid{
     display: grid;
@@ -318,7 +319,6 @@ padding-top: 100px;
     text-align: center;
 }
 
-/*footer*/
 
 @media only screen and (max-width: 630px){
     #histoire_main{
