@@ -20,7 +20,7 @@
     <!--leaflet end -->
 
 </head>
-<body class="bcg_black">
+<body class="background_img_2">
         <!--navbar -->
         <nav id="navbar">
                 <ul id="nav">
@@ -51,6 +51,31 @@
         <!--responsive navbar end -->
 
         <!--navbar end-->
+        
+        <form name="contact" action="#" method="POST" class="contact_form">   
+            <section>
+                <div>
+                    <input type="name" name="lastName" placeholder="Nom">
+                </div>
+                <div>
+                    <input type="name" name="firstName" Placeholder="Prénom">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="tel" name="phone" placeholder="Téléphone">
+                </div>
+            </section>
+            <section>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </section>
+            <section>
+                <input type="submit" value="envoyer" id="submit_btn" action="#">
+            </section>
+        </form>
         <footer>
             <h3>Tous droits résérvés</h3>
         </footer>
@@ -58,7 +83,6 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--jquery end-->
     <!--javascript -->
-    <script type="text/javascript" src="index_app.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <!--javascript end--> 
 </body>
