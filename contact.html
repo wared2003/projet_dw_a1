@@ -55,22 +55,27 @@
         <form name="contact" action="#" method="POST" class="contact_form">   
             <section>
                 <div>
-                    <input type="name" name="lastName" placeholder="Nom">
+                    <input type="name" name="lastName" placeholder="Nom" id="lastname">
+                    <span class="form-error" id="lastname_error"></span>
                 </div>
                 <div>
-                    <input type="name" name="firstName" Placeholder="Prénom">
+                    <input type="name" name="firstName" Placeholder="Prénom" id="firstname">
+                    <span class="form-error" id="firstname_error"></span>
                 </div>
             </section>
             <section>
                 <div>
-                    <input type="email" name="email" placeholder="Email">
+                    <input type="email" name="email" placeholder="Email" id="email">
+                    <span class="form-error" id="email_error"></span>
                 </div>
                 <div>
-                    <input type="tel" name="phone" placeholder="Téléphone">
+                    <input type="tel" name="phone" placeholder="Téléphone" id="phone">
+                    <span class="form-error" id="phone_error"></span>
                 </div>
             </section>
             <section>
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" id="" cols="30" rows="10" id="message" id="textarea"></textarea>
+                <span class="form-error" id="textarea_error"></span>
             </section>
             <section>
                 <input type="submit" value="envoyer" id="submit_btn" action="#">
@@ -81,6 +86,7 @@
     <!--jquery end-->
     <!--javascript -->
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="contact_app.js"></script>
     <!--javascript end--> 
 </body>
 </html>

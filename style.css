@@ -384,8 +384,15 @@ padding-top: 100px;
 }
 .contact_form div{
     margin-top: 30px;
+    text-align: center;
+}
+.contact_form div span p{
+    color: rgb(250, 81, 81);
+    font-size: 12px;
+    margin: 5px 0 0 0;
 }
 .contact_form input{
+    display: block;
     height: 45px;
     width: 350px;
     border-radius: 25px;
@@ -399,6 +406,7 @@ padding-top: 100px;
     border-color: white;
 }
 .contact_form textarea{
+    display: block;
         margin-top: 30px;
         height: 200px;
         width: 75%;
@@ -421,19 +429,21 @@ padding-top: 100px;
     /*form*/
     .contact_form{
         width: 90%;
-        top: 100px;
+        top: 75px;
     }
     .contact_form section{
         flex-wrap: wrap;
     }
     .contact_form div{
         width: 100%;
+        margin-top: 15px;
     }
     .contact_form input{
         width: 100%;
     }
     .contact_form textarea{
         width: 100%;
+        margin-top: 15px;
     }
 
 }
@@ -448,7 +458,7 @@ padding-top: 100px;
     width: 100%;
     text-align: center;
     color: white;
-}
+}l367
 footer h3{
     ma
 /*all*/
