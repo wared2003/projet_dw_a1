@@ -293,7 +293,7 @@ padding-top: 100px;
 /*section 1*/
 
 #histoire_section_1{
-    background-color: black;
+    background-color: lightslategray;
 }
 #histoire_section_1_grid{
     display: grid;
@@ -313,7 +313,7 @@ padding-top: 100px;
 /*section 3*/
 
 #histoire_section_3{
-    background-color: black;
+    background-color: lightslategray;
     margin-bottom: 50px;
 }
 #histoire_section_3_grid{
