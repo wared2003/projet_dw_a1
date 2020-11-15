@@ -10,13 +10,11 @@ $(document).ready(function(){
 
     //connect form open
     $("#connect_button").click(() => {
-        console.log('llll');
         $("#connect_popup").fadeIn(400);
         $("#connect_popup").css('display', 'block !important');
     });
     
     $("#connect_button_responsive").click(() => {
-        console.log('llll');
         $("#responsive_nav ul").fadeOut(400);
         $("#responsive_nav ul").css("display" , "none");
         $("#connect_popup").fadeIn(400);
@@ -24,7 +22,6 @@ $(document).ready(function(){
     });
     //connect form close
     $("#connect_popup_close").click(() => {
-        console.log('llll')
         $("#connect_popup").css('display', 'none')
     });
 
