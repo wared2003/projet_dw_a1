@@ -6,7 +6,7 @@
     <title>Kata_story</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/kta.jpg">
     <!--css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!--fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!--leaflet css-->
@@ -30,6 +30,7 @@
                     <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
                     <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
                     <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+                    <li class="nav_item margin_left_10px" id="connect_button">Connexion / inscription</li>
                 </ul>
         </nav>
 
@@ -47,8 +48,10 @@
                 <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
                 <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
                 <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+                <li class="nav_item margin_left_10px" id="connect_button_responsive">Connexion / inscription</li>
             </ul>
-        </nav>
+        </nav>    
+            
         <!--responsive navbar end -->
 
         <!--navbar end-->
@@ -82,12 +85,29 @@
             <button onclick="window.location.href = 'blog.html';" >ici</button>
         </div>
         <div id="mapid"></div>
+        
+        <!--popup connection-->
+        <section id="connect_popup">
+            <div id="connect_popup_close">
+                <img src="assets/croix.png" alt="croix de fermeture">
+            </div>
+            <form action="#" method="POST">
+                <h2>Connexion</h2>
+                <label for="connect_email">Email</label>
+                <input type="email" name="email" id="connect_email" required>
+                <label for="connect_password">Mot De Passe</label>
+                <input type="password" name="password" id="connect_password" required>
+                <input type="submit" id="connect_submit_btn" value="connexion">
+            </form>
+            <p>Créer un compte</p>
+        </section>
+
     <!--jquery-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--jquery end-->
     <!--javascript -->
-    <script type="text/javascript" src="index_app.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/index_app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <!--javascript end--> 
 </body>
 </html>
