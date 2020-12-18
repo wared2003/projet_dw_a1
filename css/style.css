@@ -47,10 +47,10 @@ a{
 .bcg_black{
     background-color: #000000;
 }
-div img{
-    height: 100%;
-    width: 100%;
+.hidden{
+    display: none !important;
 }
+
 /*navbar*/
 
 nav{
@@ -228,7 +228,7 @@ ul{
     margin-top: 300px;
     margin-bottom: 130px;
     border-radius: 30px;
-    z-index: 0;
+    z-index: 1;
     position: relative;
 }
 
@@ -241,6 +241,10 @@ display: block;
 background-color: lightslategray;
 height: 250px;
 padding-top: 100px;
+}
+#histoire_main img{
+    height: 100%;
+    width: 100%;
 }
 #nav_histoire{
     top: 180px;
@@ -464,6 +468,43 @@ padding-top: 100px;
     }
 
 }
+
+/*galerie*/
+#galerie{
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 200px;
+    text-align: center;
+}
+.galerie_bloc{
+    float: left;
+    margin:5px 5px;
+    display: inline-block;
+}
+.galerie_menu{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 180px
+}
+.galerie_menu button{
+    display: inline-block;
+    height: 30px;
+    width: 100px;
+    margin: 20 auto;
+    background-color: white;
+    color: grey;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.galerie_menu button:hover{
+  background-color: lightslategray;
+  color: white;
+}
+
 /*connect*/
 #connect_popup{
     display: none;
@@ -479,6 +520,7 @@ padding-top: 100px;
     background-color: lightslategray;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
     border-radius: 30px;
+    z-index: 300;
 }
 #connect_popup h2{
     margin-bottom: 40px;
@@ -548,5 +590,18 @@ footer h3{
         position: absolute;
         top: 100px;
         left: 2.5%;
+        z-index: 5 !important;
     }
+}
+.chauve{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 100px;
+    left: 30%;
+    z-index: 0;
+}
+.chauve img{
+    height: 100%;
+    width: 100%;
 }

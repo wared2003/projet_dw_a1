@@ -1,2 +1,131 @@
-<h1 style="text-align: center; margin-top: 100px;">Cette page est encore en construction, reviens plus tard</h1>
-<a href="index.html" style="display: block; text-align: center;">Retour à l'acceuil</a>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kata_story</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/kta.jpg">
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--leaflet css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+         <!-- Make sure you put this AFTER Leaflet's CSS -->
+         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <!--leaflet end -->
+
+</head>
+<body class="bcg_black">
+    <div >
+        <!--navbar -->
+        <nav id="navbar">
+                <ul id="nav">
+                    <li class="nav_item"><a href="index.html">Accueil</li></a>
+                    <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
+                    <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
+                    <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
+                    <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+                    <li class="nav_item margin_left_10px" id="connect_button">Connexion / inscription</li>
+                </ul>
+        </nav>
+
+        <!--responsive navbar -->
+
+        <button id="responsive_nav_button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id = "responsive_nav">
+            <ul id="nav">
+                <li class="nav_item"><a href="index.html">Accueil</li></a>
+                <li class="nav_item margin_left_10px"><a href="histoire.html">Histoire</a></li>
+                <li class="nav_item margin_left_10px"><a href="galerie.html">Galerie</a></li>
+                <li class="nav_item margin_left_10px"><a href="blog.html">Blog</a></li>
+                <li class="nav_item margin_left_10px"><a href="contact.html">Contact</a></li>
+                <li class="nav_item margin_left_10px" id="connect_button_responsive">Connexion / inscription</li>
+            </ul>
+        </nav>    
+        
+     
+            
+        <!--responsive navbar end -->
+        <div class="galerie_menu">
+            <button id='all'>all</button>
+            <button id='ab'>ab</button>
+            <button id='cd'>cd</button>
+        </div>
+        <section id="galerie">
+            <div class="galerie_bloc ab">
+                <img src="http://via.placeholder.com/300x200" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc cd">
+                <img src="http://via.placeholder.com/150x100" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc ab">
+                <img src="http://via.placeholder.com/300x200" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc cd">
+                <img src="http://via.placeholder.com/150x100" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc ab">
+                <img src="http://via.placeholder.com/300x200" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc cd">
+                <img src="http://via.placeholder.com/150x100" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc ab">
+                <img src="http://via.placeholder.com/300x200" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc cd">
+                <img src="http://via.placeholder.com/150x100" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc ab">
+                <img src="http://via.placeholder.com/300x200" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc cd">
+                <img src="http://via.placeholder.com/150x100" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc ab">
+                <img src="http://via.placeholder.com/300x200" width="300" height="200" alt="alternative">
+            </div>
+            <div class="galerie_bloc cd">
+                <img src="http://via.placeholder.com/150x100" width="300" height="200" alt="alternative">
+            </div>
+            
+        </section>
+
+        <!--navbar end-->
+
+    
+        <!--popup connection-->
+        <section id="connect_popup">
+            <div id="connect_popup_close">
+                <img src="assets/croix.png" alt="croix de fermeture">
+            </div>
+            <form action="#" method="POST">
+                <h2>Connexion</h2>
+                <label for="connect_email">Email</label>
+                <input type="email" name="email" id="connect_email" placeholder="email" required>
+                <label for="connect_password">Mot De Passe</label>
+                <input type="password" name="password" id="connect_password" placeholder="mot de passe" required>
+                <input type="submit" id="connect_submit_btn" value="connexion">
+            </form>
+            <p>Créer un compte</p>
+        </section>
+
+    <!--jquery-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--jquery end-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <!--javascript -->
+    <script type="text/javascript" src="js/galerie_app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!--javascript end--> 
+</body>
+</html>

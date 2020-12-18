@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+    var scroll = 0    
     //sondage banière index.html
 
     $('#sondage_yes').click(function(){
@@ -25,7 +25,20 @@ $(document).ready(function(){
     tileSize: 512,
     zoomOffset: -1,
     accessToken: 'pk.eyJ1Ijoid2FyZWQyMDAzIiwiYSI6ImNqeWQxNWFkdDBueWUzY3A4dTdlZTI3OG0ifQ.loi4SD_6Y0LrRSa04zryXg'
-}).addTo(mymap);
+    }).addTo(mymap);
+
+    var map_top = $('#mapid').offset().top
+    console.log("fff" + map_top)
+    $("#chauve").css("top", map_top),
+    $(window).scroll( () => {
+        scroll = $(window).scrollTop();
+        console.log(scroll)
+        if(scroll < 270){
+            var top = map_top - scroll;
+            $('#chauve').css("top", top)
+        }   
+    });
+    scroll = $(window)
 
     //carte index.html end
    
