@@ -504,6 +504,11 @@ padding-top: 100px;
   background-color: lightslategray;
   color: white;
 }
+.big{
+    height: 500px;
+    width: 500px;
+    background-color: white;
+}
 
 /*connect*/
 #connect_popup{
@@ -605,3 +610,4 @@ footer h3{
     height: 100%;
     width: 100%;
 }
+

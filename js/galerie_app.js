@@ -22,4 +22,11 @@ $(document).ready(function(){
         $('.cd').addClass('hidden').fadeOut();
         galerie.masonry('layout');
     });
+
+    galerie.find('.galerie_bloc').click(function(){
+        element = this;
+        $('.galerie_bloc').not(element).removeClass('big')
+        $(element).toggleClass('big');
+        galerie.masonry('layout')
+    })
 });
