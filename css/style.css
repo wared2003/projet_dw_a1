@@ -499,28 +499,28 @@ padding-top: 100px;
     height: 30px;
     width: 100px;
     margin: 20 auto;
-    background-color: white;
-    color: grey;
-    border: none;
+    background:none;
+    color: white;
+    border: solid 2px white;
     border-radius: 20px;
     margin-left: 10px;
 }
 .galerie_menu button:hover{
-  background-color: lightslategray;
-  color: white;
+  background-color: lightgrey;
 }
 .big{
-    height: 600px;
+    height: 610px;
     width: 500px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
 }
 .img_com{
-    width: 95%;
+    width: 87%;
     padding: 10px;
     text-align: center;
     background-color: lightgrey;
     margin: 2.5% auto;
-    border-radius:20px ;
+    border-radius:20px;
     box-shadow: -10px 10px  rgba(140, 140, 145, 0.05);
 }
 .slider_container{
@@ -540,16 +540,36 @@ padding-top: 100px;
     width: 35px;
 }
 .previous{
-    margin-right: -50px;
+    margin-right: -35px;
     position: relative;
     z-index: 100;
     float: left;
 }
 .next{
-    margin-left: -50px;
+    margin-left: -35px;
     position: relative;
     z-index: 100;
     float: right;
+}
+.add_com_btn{
+    height: 40px;
+    width: 150px;
+    display: inline-block;
+    border: solid 2px white;
+    color: white;
+    background: none;
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 5px auto;
+}
+.add_com_btn:hover{
+    background-color: lightgrey;
+}
+.trash{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin-right: 10px;
 }
 
 /*connect*/
