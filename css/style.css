@@ -571,6 +571,91 @@ padding-top: 100px;
     float: right;
     margin-right: 10px;
 }
+/*comment popup*/
+
+#comment_popup{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 10px 0 0 0;
+    position: absolute;
+    top: 26vh;
+    left: 37vw;
+    height: 550px;
+    width: 400px;
+    background-color: lightslategray;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    z-index: 300;
+}
+#comment_popup h2{
+    margin-bottom: 30px;
+}
+#comment_popup img{
+    width: 100%;
+    height: 100%;
+}
+#comment_popup div{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+#comment_popup input{
+    display: block;
+    margin: 20px auto;
+    height: 45px;
+    width: 90%;
+    border-radius: 25px;
+    padding-left: 20px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+
+}
+#comment_popup textarea{
+    display: block;
+    margin: 20px auto;
+    height: 180px;
+    width: 90%;
+    border-radius: 25px;
+    padding-left: 20px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+
+}
+/*trash popup*/
+#trash_success_popup{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding: 10px 0 0 0;
+    position: absolute;
+    top: 50vh;
+    left: 37vw;
+    height: 200px;
+    width: 400px;
+    background-color: lightslategray;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    z-index: 300;
+}
+#trash_success_popup h2{
+    margin-bottom: 30px;
+}
+#trash_success_popup img{
+    width: 100%;
+    height: 100%;
+}
+#trash_success_popup div{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
 
 /*connect*/
 #connect_popup{
@@ -658,6 +743,24 @@ footer h3{
         top: 100px;
         left: 2.5%;
         z-index: 5 !important;
+    }
+    #comment_popup{
+        width: 95%;
+        margin: 0px auto;
+        position: absolute;
+        top: 100px;
+        left: 2.5%;
+        z-index: 5 !important;
+    }
+    .galerie_menu button{
+        display: block;
+        margin:5px auto;
+    }
+    .galerie_bloc{
+        width: 98%;
+    }
+    .body{
+        width: 100vw;
     }
 }
 .chauve{

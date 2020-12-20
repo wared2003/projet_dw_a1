@@ -64,8 +64,28 @@ $(document).ready(function(){
         };
     });
 
+    //comment form
+
+    //comment form open
+    $(".add_com_btn").click(() => {
+        $("#comment_popup").fadeIn(400);
+        $("#comment_popup").css('display', 'block !important');
+    });
+
+     //comment form close
+    $("#comment_popup_close").click(() => {
+    $("#comment_popup").css('display', 'none');
+    });
 
 
+    // trash success  popup open
+    $(".trash").click(() => {
+        $("#trash_success_popup").fadeIn(400);
+        $("#trash_success_popup").css('display', 'block !important');
+    });
 
-
+    //trash success popup close
+    $("#trash_popup_close").click(() => {
+    $("#trash_success_popup").css('display', 'none');
+    });
 });

@@ -21,7 +21,6 @@
 
 </head>
 <body class="bcg_lateGrey">
-    <div >
         <!--navbar -->
         <nav id="navbar">
                 <ul id="nav">
@@ -269,6 +268,32 @@
         </section>
 
         <!--navbar end-->
+        <!-- commente pop-up-->
+        
+        <section id="comment_popup">
+            <div id="comment_popup_close">
+                <img src="assets/croix.png" alt="croix de fermeture">
+            </div>
+            <form action="#" method="POST">
+                <h2>Commenter</h2>
+                <label for="name">Prénom</label>
+                <input type="text" name="text" id="name" placeholder="Prénom" required>
+                <label for="commentaire">commentaire</label>
+                <textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+                <input type="submit" id="connect_submit_btn" value="Publier">
+            </form>
+        </section>
+
+        <!-- comment popup end-->
+
+        <!-- dell com success-->
+        <section id="trash_success_popup">
+            <div id="trash_popup_close">
+                <img src="assets/croix.png" alt="croix de fermeture">
+            </div>
+                <h2>Commentaire supprimé</h2>
+        </section>
+        <!-- dell com success end-->
 
     
         <!--popup connection-->
