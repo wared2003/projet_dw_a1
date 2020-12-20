@@ -523,13 +523,13 @@ padding-top: 100px;
     border-radius:20px ;
     box-shadow: -10px 10px  rgba(140, 140, 145, 0.05);
 }
-#slider_container{
+.slider_container{
     display: none;
 }
-#slider_container div{
+.slider_container div{
     display:none;
 }
-#slider_container .active{
+.slider_container .active{
     display: inline-block;
 }
 .previous, .next{

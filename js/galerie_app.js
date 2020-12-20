@@ -24,12 +24,14 @@ $(document).ready(function(){
     });
 
     galerie.find('.galerie_img').click(function(){
-        element = this;
-        com_slider_position = 0
-        $('.galerie_bloc').not(element).parent().removeClass('big');
-        $('.galerie_bloc').not(element).parent().children().removeClass('visible');
+        element = $(this);
+        com_slider_position = 0;
+        $('.galerie_bloc').not(element.parents()).removeClass('big');
+        $('.slider_container').not(element.parent().children()).removeClass('visible');
         $(element).parent().toggleClass('big');
         $(element).parent().children().toggleClass('visible');
+        $(element).parent().find('.img_com').removeClass('active');
+        $(element).parent().find('.img_com:first').addClass('active');
         galerie.masonry('layout');
     })
 
@@ -37,9 +39,9 @@ $(document).ready(function(){
 
     //element suivant
     $('.next').click(function(){
-        var coms = $(element).parent().find('.img_com')
-        var curent = $('.active');
-        var next = curent.next()
+        var coms = $(element).parent().find('.img_com');
+        var curent = $(element).parent().find('.active');
+        var next = curent.next();
         console.log(coms.length);
 
         if(com_slider_position < (coms.length - 1)){
@@ -52,7 +54,7 @@ $(document).ready(function(){
 
     //element précédent
     $('.previous').click(function(){
-        var curent = $('.active');
+        var curent = $(element).parent().find('.active');
         var prev = curent.prev();
 
         if(com_slider_position > 0){
